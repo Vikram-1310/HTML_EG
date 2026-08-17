@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Grid</title>
+       <style>
+           .container {
+               display: grid;
+               border : 1px solid green;
+                grid-row : 25% 25% 25% 25%;
+           }
+           .header {
+               background-color: lightblue;
+               height: 25vh;
+               grid-row : 1/2 ;
+               grid-column : 1/5 ;
+           }
+           .sb1{
+                background-color: rgb(156, 229, 156);
+                height: 25vh;
+                grid-row : 2/3 ;
+                grid-column : 1/5 ;
+           }
+           .sb2 {
+                background-color: yellow;
+                height: 25vh;
+                grid-row : 2/3 ;
+                grid-column : 2/3 ;
+           }
+           .sb3 {
+                background-color: pink;
+                height: 25vh;
+                grid-row : 2/3 ;
+                grid-column : 3/4;
+           }
+           .sb{
+                background-color: rgb(226, 10, 10);
+                height: 50vh;
+                grid-row : 2/4 ;
+                grid-column : 4/5 ;
+           }
+           .main{
+                background-color: violet;
+                height: 25vh;
+                grid-row : 3/4 ;
+                grid-column : 1/4 ;
+           }
+           .footer{
+                background-color: lightgreen;
+                height: 25vh;
+                grid-row : 4/5 ;
+                grid-column : 1/5 ;
+           }
+        
+       </style>
+</head>
+<body style="font-size: 20px;">
+        <div class="container">
+            <div class="header">Header element
+                <span>home</span>
+                <span>About</span>
+                <span>login</span>
+            </div>
+           <div class="sb1">small box1</div>>
+              <div class="sb2">small box2</div>
+                <div class="sb3">small box3</div>
+                <div class="sb">side bar</div>
+                <div class="main">Main content</div>
+                <div class="footer">Footer</div>
+        </div>
+</body>
+</html>
