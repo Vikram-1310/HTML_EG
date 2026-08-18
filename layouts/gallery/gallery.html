@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Travel Log</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Header */
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+/* Introduction */
+
+.intro {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.intro h2 {
+    font-size: 30px;
+}
+
+.intro p {
+    line-height: 1.6;
+}
+
+
+/* Travel Grid */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 20px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+/* Travel Card */
+
+.card {
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+}
+
+
+/* Hover Effect */
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+
+/* Images */
+
+.card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+}
+
+
+/* Description */
+
+.content {
+
+    padding: 20px;
+
+    text-align: left;
+
+}
+
+.content h2 {
+
+    margin-top: 0;
+
+    font-size: 25px;
+
+}
+
+.location {
+
+    color: #3498db;
+
+    font-weight: bold;
+
+}
+
+.content p {
+
+    line-height: 1.6;
+
+}
+
+
+/* Footer */
+
+footer {
+
+    margin-top: 40px;
+
+    background-color: #222;
+
+    color: white;
+
+    padding: 20px;
+
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+    .gallery {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Header -->
+
+<header>
+
+    <h1>My Travel Log</h1>
+
+    <p>Exploring the Beautiful Places of India</p>
+
+</header>
+
+
+<!-- Navigation -->
+
+<nav>
+
+    <a href="#">Home</a>
+
+    <a href="#places">Places</a>
+
+    <a href="#about">About</a>
+
+</nav>
+
+
+<!-- Introduction -->
+
+<section class="intro">
+
+    <h2>My Travel Journey</h2>
+
+    <p>
+        Traveling allows us to discover new places, experience
+        different cultures and create unforgettable memories.
+        Here are some of the beautiful destinations from my
+        travel journey across India.
+    </p>
+
+</section>
+
+
+<!-- Travel Grid -->
+
+<div class="gallery" id="places">
+
+
+    <!-- Hampi -->
+
+    <div class="card">
+
+        <img src="hampi.jpg" alt="Hampi">
+
+        <div class="content">
+
+            <h2>Hampi</h2>
+
+            <p class="location">
+                📍 Karnataka
+            </p>
+
+            <p>
+                Hampi is a historic destination famous for its
+                ancient temples, magnificent ruins and beautiful
+                stone architecture. The famous Stone Chariot is
+                one of its most impressive attractions.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Qutub Minar -->
+
+    <div class="card">
+
+        <img src="image.jpg" alt="Qutub Minar">
+
+        <div class="content">
+
+            <h2>Qutub Minar</h2>
+
+            <p class="location">
+                📍 Delhi
+            </p>
+
+            <p>
+                Qutub Minar is one of India's most famous historical
+                monuments. Its tall tower and detailed architecture
+                represent the rich history and heritage of Delhi.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Jatayu -->
+
+    <div class="card">
+
+        <img src="image1.jpg" alt="Jatayu Earth Center">
+
+        <div class="content">
+
+            <h2>Jatayu Earth Center</h2>
+
+            <p class="location">
+                📍 Kerala
+            </p>
+
+            <p>
+                Jatayu Earth Center is famous for its enormous
+                sculpture of Jatayu. The location is surrounded
+                by beautiful green hills and offers a wonderful
+                view of nature.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Varanasi -->
+
+    <div class="card">
+
+        <img src="kasi.jpg" alt="Varanasi">
+
+        <div class="content">
+
+            <h2>Varanasi</h2>
+
+            <p class="location">
+                📍 Uttar Pradesh
+            </p>
+
+            <p>
+                Varanasi is one of India's oldest cities and is
+                situated on the banks of the Ganges. Its ghats,
+                temples and beautiful river views make it a
+                memorable travel destination.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Manali -->
+
+    <div class="card">
+
+        <img src="manali.jpg" alt="Manali">
+
+        <div class="content">
+
+            <h2>Manali</h2>
+
+            <p class="location">
+                📍 Himachal Pradesh
+            </p>
+
+            <p>
+                Manali is surrounded by beautiful mountains,
+                green valleys and rivers. It is a wonderful
+                destination for enjoying nature and peaceful
+                mountain landscapes.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Ooty -->
+
+    <div class="card">
+
+        <img src="ooty.jpg" alt="Ooty">
+
+        <div class="content">
+
+            <h2>Ooty</h2>
+
+            <p class="location">
+                📍 Tamil Nadu
+            </p>
+
+            <p>
+                Ooty is a beautiful hill station known for its
+                green landscapes, tea plantations and pleasant
+                climate. The surrounding hills make it a perfect
+                place to relax and enjoy nature.
+            </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!-- About -->
+
+<section class="intro" id="about">
+
+    <h2>About My Travel Log</h2>
+
+    <p>
+        This travel log is a collection of beautiful destinations
+        across India, including historical monuments, cultural
+        locations, mountains and natural landscapes.
+    </p>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>© 2026 My Travel Log | Exploring India</p>
+
+</footer>
+
+
+</body>
+
+</html>
